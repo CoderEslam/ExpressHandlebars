@@ -4,8 +4,19 @@
 <h1>Eslam Ghazy</h1>
 
 
-{{# if c}}
+{{#if c}}
     it is true
-    {{else}}
+{{else}}
     it is false
 {{/if}}
+
+<!--for in node.js-->
+{{#each array}}
+    {{this}}
+    <br>
+{{/each}}
+
+{{#each array as | value index|}}
+    {{index}} : {{ value}}
+    <br>
+{{/each}}
